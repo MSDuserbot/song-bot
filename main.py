@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 
-import yp_dlp
+import yt_dlp
 from youtube_search import YoutubeSearch
 import requests
 
