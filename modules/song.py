@@ -43,7 +43,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('`Searching... Please Wait...`')
+    m = message.reply('`𝙎𝙚𝙖𝙧𝙘𝙝𝙞𝙣𝙜... 𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩...`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -74,15 +74,15 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing found Retry with another !**')
+            m.edit('**👎 ɴᴏᴛʜɪɴɢ ғᴏᴜɴᴅ ʀᴇᴛʀʏ ᴡɪᴛʜ ᴀɴᴏᴛʜᴇʀ!**')
             return
     except Exception as e:
         m.edit(
-            "**Enter Song Name with /song Command!**"
+            "**ᴇɴᴛᴇʀ sᴏɴɢ ɴᴀᴍᴇ ᴡɪᴛʜ /song ᴄᴏᴍᴍᴀɴᴅs!**"
         )
         print(str(e))
         return
-    m.edit("`Bruh... Uploading... Please Wait...`")
+    m.edit("`𝘽𝙧𝙪𝙝... 𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜... 𝙋𝙡𝙚𝙖𝙨𝙚 𝙬𝙖𝙞𝙩...`")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -96,7 +96,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An internal Error Occured, Report This @Olympuschatting!!**')
+        m.edit('**ᴀɴ ɪɴᴛᴇʀɴᴀʟ ᴇʀʀᴏʀ ᴏᴄᴄᴜʀᴇᴅ, Rᴇᴘᴏʀᴛ ᴛʜɪs ᴏɴ @Olympuschatting!!**')
         print(e)
     try:
         os.remove(audio_file)
