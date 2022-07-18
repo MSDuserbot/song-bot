@@ -9,12 +9,12 @@ import time
 from config import Config
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-ABS="ᴅᴇᴠᴇʟᴏᴘᴇʀ"
+ABS="Sᴜᴘᴘᴏʀᴛ"
 APPER=""
-OWNER="ᴏᴡɴᴇʀ"
-GITCLONE="https://t.me/OlympusChatting"
-B2="telegram.dog/My_Dear_Lightbright"
-BUTTON1="Sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ"
+OWNER="Nᴇᴛᴡᴏʀᴋ"
+GITCLONE="https://t.me/AboutMk"
+B2="https://t.me/OlympusChatting"
+BUTTON1="ᴏᴡɴᴇʀ"
 
 def time_to_seconds(time):
     stringt = str(time)
@@ -28,7 +28,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton(BUTTON1, url=GITCLONE)
                  ],[
-                    InlineKeyboardButton(OWNER, url=f"https://telegram.dog/{Config.OWNER}"),
+                    InlineKeyboardButton(OWNER, url=f"https://t.me/olympusXnetwork"),
                     InlineKeyboardButton(ABS, url=B2)
             ]
           ]
