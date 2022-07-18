@@ -1,6 +1,6 @@
 import os
 import re
-from youtube_dl import yt_dl
+import yt_dlp
 
 class Config:
     APP_ID = int(os.environ.get("APP_ID", ""))
